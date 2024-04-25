@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <title>お茶カフェサイト-Menu</title>
+  <meta name="description" content="「お茶カフェ」のメニュー詳細です。お茶の詳しい説明を読むことができます。">
+  <meta name="viewport" content="width=device-width">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://kit.fontawesome.com/68afbe7e1a.js" crossorigin="anonymous"></script>
+  <script src="./js/main.js"></script>
+  <link rel="icon" type="image/png" href="/images/index/cafe logo.png">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/menu.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <a class="header-logo" href="./index.html">
+        <img src="./images/index/cafe-logo2.png" alt="ヘッダーロゴ">
+      </a>
+      <button class="toggle-menu-button"></button>
+
+      <div class="header-menu-list menu-header-phone">
+        <nav class="menu-list" data-nav-kind="menu">
+          <p class="nav-title tea-title">お茶</p>
+          <ul class="nav-category-list">
+            <li><a href="#yamecha">八女茶</a></li>
+            <li><a href="#sayamacha">狭山茶</a></li>
+            <li><a href="#kakegawacha">掛川茶</a></li>
+            <li><a href="#ujicha">宇治茶</a></li>
+            <li><a href="#ryokucha">緑茶</a></li>
+            <li><a href="#houjicha">ほうじ茶</a></li>
+            <li><a href="#uroncha">烏龍茶</a></li>
+            <li><a href="#mugicha">麦茶</a></li>
+          </ul>
+          <p class="nav-title sweet-title">茶菓子</p>
+          <ul class="nav-category-list">
+            <li><a href="#dorayaki">どらやき</a></li>
+            <li><a href="#manju">饅頭</a></li>
+          </ul>
+          <p class="nav-title back-color"><a href="index.html">トップへ戻る</a></p>
+        </nav>
+      </div>
+
+      <div class="header-menu-list menu-header-pc">
+        <nav class="menu-list">
+          <ul>
+            <li><a href="index.html">トップへ戻る</a></li>
+          </ul>
+        </nav>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- main -->
+  <main class="main">
+    <div id="menu" class="menu section">
+      <div class="wrapper">
+        <h2 class="sub-title center">メニュー詳細</h2>
+        <h3 class="menu-title menu-title-tea">お茶（全8種）</h3>
+        <ul class="item-list tea-list">
+          <li id="yamecha">
+            <img src="./images/index/tea11.jpg" alt="八女茶の商品画像">
+            <dl>
+              <dt>八女茶</dt>
+              <dd>
+                緑茶の一種である。特徴は、旨味と甘味、そして香りです。<br>
+                八女茶の最上級にあたる玉露は低温でお茶を淹れると、渋みのない甘さや旨味が格別です。
+              </dd>
+            </dl>
+            <p class="type">ICE</p>
+          </li>
+          <li id="sayamacha">
+            <img src="./images/index/tea12.jpg" alt="狭山茶の商品画像">
+            <dl>
+              <dt>狭山茶</dt>
+              <dd>
+                狭山茶はコク味が特色の日本三大銘茶のひとつに数えられるお茶です。<br>
+                仕上加工には古来より“狭山火入れ”と称される独特の火入れ技術が生かされています。
+              </dd>
+            </dl>
+            <p class="type">HOT</p>
+          </li>
+          <li id="kakegawacha">
+            <img src="./images/index/img-item03.jpg" alt="掛川茶の商品画像">
+            <dl>
+              <dt>掛川茶</dt>
+              <dd>
+                掛川茶は茶葉を蒸す時間が長いため、苦味や臭みが抑えられているのが特徴です。<br>
+                美しく鮮やかな明るい緑色で、雑味なくスッキリした香りは飲む人を選ばず、老若男女に愛されています。
+              </dd>
+            </dl>
+            <p class="type">HOT</p>
+          </li>
+          <li id="ujicha">
+            <img src="./images/index/img-item04.jpg" alt="宇治茶の商品画像">
+            <dl>
+              <dt>宇治茶</dt>
+              <dd>
+                日本三大銘茶のひとつであり、緑茶の一種です。<br>
+                製茶の工程である蒸し時間が短い「浅蒸し茶」で、黄色に近い明るい水色で、濁りが少なく澄んでいるのが特徴のお茶です。
+              </dd>
+            </dl>
+            <p id="type">ICE</p>
+          </li>
+          <li class="ryokucha">
+            <img src="./images/index/tea11.jpg" alt="緑茶の商品画像">
+            <dl>
+              <dt>緑茶</dt>
+              <dd>
+                玉露、煎茶、番茶、抹茶、ほうじ茶など種類があります。<br>
+                インフルエンザ予防、ダイエット効果、生活習慣病予防、リラックス効果、免疫細胞を活性化などが期待できる健康に良いお茶です。
+              </dd>
+            </dl>
+            <p class="type">HOT</p>
+          </li>
+          <li id="houjicha">
+            <img src="./images/index/tea12.jpg" alt="ほうじ茶の商品画像">
+            <dl>
+              <dt>ほうじ茶</dt>
+              <dd>
+                緑茶の一種であり、煎茶や番茶を焙煎したものです。<br>
+                一番茶の新芽が使われる事はほとんどなく、ニ・三番茶以降の茶葉や茎の部分が使われている、比較的安価で身近なお茶です。
+              </dd>
+            </dl>
+            <p class="type">ICE</p>
+          </li>
+          <li id="uroncha">
+            <img src="./images/index/img-item03.jpg" alt="烏龍茶の商品画像">
+            <dl>
+              <dt>烏龍茶</dt>
+              <dd>
+                中国発祥のお茶で、発酵を途中で止めた半発酵茶です。<br>
+                深みのある味と香りが特徴的で、脂肪の吸収を抑える効果や、虫歯を予防する効果などがあります。
+              </dd>
+            </dl>
+            <p class="type">ICE</p>
+          </li>
+          <li id="mugicha">
+            <img src="./images/index/img-item04.jpg" alt="麦茶の商品画像">
+            <dl>
+              <dt>麦茶</dt>
+              <dd>
+                一番の特徴は、一般的な茶葉のお茶に含まれる、カフェインやタンニンが含まれていないことです。<br>
+                そのため、妊婦さんや赤ちゃんから高齢者まで幅広い方に飲まれています。
+              </dd>
+            </dl>
+            <p class="type">ICE</p>
+          </li>
+        </ul>
+
+        
+        <h3 class="menu-title menu-title-sweet">茶菓子（全2種）</h3>
+        <ul class="item-list sweet-list">
+          <li id="dorayaki">
+            <img src="./images/index/dorayaki.png" alt="どらやきの商品画像">
+            <dl>
+              <dt>どらやき</dt>
+              <dd>
+                上野に店舗を構える“うさぎや”。<br>
+                ここのどら焼きは絶品です。<br>
+                餡は、十勝産の小豆を使ったとてもやわらかい粒餡で、皮からこぼれでるほどたくさん入ってます。
+              </dd>
+            </dl>
+          </li>
+          <li id="manju">
+            <img src="./images/index/manju.png" alt="饅頭の商品画像">
+            <dl>
+              <dt>饅頭</dt>
+              <dd>
+                カステラ風の生地で、主に白あんを包んだ「都まんじゅう」。<br>
+                アメ横にある「上野 都まんじゅう本舗 かるた家」で発売しています。
+              </dd>
+            </dl>
+          </li>
+
+          <li class="dammy-item"></li>
+
+        </ul>
+
+
+      </div>
+      <!-- <div class="link-button-area">
+        <a class="link-button" href="./menu.html">MENU</a>
+      </div> -->
+    </div>
+  </main>
+
+  <!-- footer -->
+  <footer class="footer">
+    <nav class="menu-list">
+      <ul>
+        <li><a href="index.html">トップへ戻る</a></li>
+      </ul>
+    </nav>
+    <a class="footer-logo" href="./index.html">
+      <img src="./images/index/cafe-logo2.png" alt="フッターロゴ">
+    </a>
+    <p class="footer-intro"><span>NPO法人「おりがみ」</span><span class="footer-x-mark">×</span><span>茶の君野園</span></p>
+    <p class="footer-time">OPEN 5/18 13:00-17:00</p>
+    <p class="copyright"><small>&copy;お茶カフェ</small></p>
+  </footer>
+</body>
+
+</html>
