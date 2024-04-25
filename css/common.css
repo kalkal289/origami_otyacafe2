@@ -307,7 +307,7 @@ body {
   }
 
   .footer-intro {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 
   .footer-tel {
