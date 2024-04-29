@@ -139,6 +139,10 @@
   margin: 30px 0;
 }
 
+.detail-last-state {
+  font-size: 14px;
+}
+
 .detail-list {
   display: flex;
   justify-content: space-around;
