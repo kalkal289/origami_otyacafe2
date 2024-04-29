@@ -10,6 +10,17 @@ $(window).on("load", function() {
   },3500);
 });
 
+//フォームリンクの透明化
+$(function() {
+  $(window).on('scroll', function() {
+    if($(this).scrollTop() + $(window).height() > $(".footer").offset().top){
+      $(".form-link").fadeOut();
+    } else {
+      $(".form-link").fadeIn();
+    }
+  });
+});
+
 $(function() {  
   // Q&Aのスライド処理
   $(".js-question").on("click", function() {
