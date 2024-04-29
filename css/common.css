@@ -56,7 +56,8 @@ body {
 }
 
 .menu-list ul li {
-  margin: 0 20px;
+  margin: 0 12px;
+  font-size: 14px;
 }
 
 .toggle-menu-button {
@@ -234,6 +235,21 @@ body {
   margin-top: 90px;
 }
 
+.url-text {
+  color: #0000ee;
+}
+
+.url-text:hover {
+  text-decoration: underline;
+}
+
+/* .highlight {
+  text-decoration-line: underline;
+  text-decoration-color: #2eff3c;
+  font-weight: bold;
+  color: #29cf00;
+} */
+
 @media(max-width: 800px) {
   .menu-list ul {
     display: block;
@@ -284,10 +300,6 @@ body {
     transform: translate(0);
   }
 
-  .main {
-    padding-top: 50px;
-  }
-
   .toggle-menu-button {
     display: block;
     width: 44px;
@@ -300,6 +312,10 @@ body {
     border: none;
     border-radius: 0;
     outline: none;
+  }
+
+  .main {
+    padding-top: 50px;
   }
 
   .footer-logo {
