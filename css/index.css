@@ -895,7 +895,11 @@
   }
 
   .contact-item {
-    width: 90%;
+    width: 100%;
+  }
+
+  .contact-btn {
+    height: 80px;
   }
 
   .contact-item:nth-child(n+2) {
