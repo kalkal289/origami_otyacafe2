@@ -91,11 +91,27 @@ $(function() {
     }
   });
   
-  //クイズ結果
+  //クイズ結果画面
   $(".js-quiz-reset").click(function() {
     correctCount = 0;
     // $(".js-result-mess").hide();
     $(".js-quiz-result").hide();
     $(".js-quiz1").fadeIn(300);
+    
+    if($(".js-quiz-explan-area").css("display") !== "none") {
+      $(".js-quiz-explan").html('<i class="fa-solid fa-book"></i>解説を表示');
+      $(".js-quiz-explan-area").fadeOut();
+    }
+  });
+
+  // クイズ解説表示切り替え
+  $(".js-quiz-explan").on("click", function() {
+    if($(".js-quiz-explan-area").css("display") === "none") {
+      $(".js-quiz-explan").html('<i class="fa-solid fa-book"></i>解説を閉じる');
+      $(".js-quiz-explan-area").fadeIn();
+    } else {
+      $(".js-quiz-explan").html('<i class="fa-solid fa-book"></i>解説を表示');
+      $(".js-quiz-explan-area").fadeOut();
+    }
   });
 });
