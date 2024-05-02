@@ -251,6 +251,10 @@ body {
 } */
 
 @media(max-width: 800px) {
+
+  body {
+    font-size: 14px;
+  }
   .menu-list ul {
     display: block;
     text-align: center;
