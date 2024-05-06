@@ -30,11 +30,11 @@
         <nav class="menu-list" data-nav-kind="menu">
           <p class="nav-title tea-title">お茶</p>
           <ul class="nav-category-list">
+            <!-- <li><a href="#ryokucha">緑茶</a></li> -->
             <li><a href="#yamecha">八女茶</a></li>
             <li><a href="#sayamacha">狭山茶</a></li>
             <li><a href="#kakegawacha">掛川茶</a></li>
             <li><a href="#ujicha">宇治茶</a></li>
-            <li><a href="#ryokucha">緑茶</a></li>
             <li><a href="#houjicha">ほうじ茶</a></li>
             <li><a href="#uroncha">烏龍茶</a></li>
             <li><a href="#mugicha">麦茶</a></li>
@@ -64,10 +64,21 @@
     <div id="menu" class="menu section">
       <div class="wrapper">
         <h2 class="sub-title center">メニュー詳細</h2>
-        <h3 class="menu-title menu-title-tea">お茶（全8種）</h3>
+        <h3 class="menu-title menu-title-tea">お茶（全7種）</h3>
         <ul class="item-list tea-list">
+          <!-- <li id="ryokucha">
+            <img src="./images/index/tea11.jpg" alt="緑茶の商品画像">
+            <dl>
+              <dt>緑茶</dt>
+              <dd>
+                玉露、煎茶、番茶、抹茶、ほうじ茶など種類があります。<br>
+                インフルエンザ予防、ダイエット効果、生活習慣病予防、リラックス効果、免疫細胞を活性化などが期待できる健康に良いお茶です。
+              </dd>
+            </dl>
+            <p class="type">HOT</p>
+          </li> -->
           <li id="yamecha">
-            <img src="./images/index/tea11.jpg" alt="八女茶の商品画像">
+            <img src="./images/index/yame-tea.jpg" alt="八女茶の商品画像">
             <dl>
               <dt>八女茶</dt>
               <dd>
@@ -78,7 +89,7 @@
             <p class="type">ICE</p>
           </li>
           <li id="sayamacha">
-            <img src="./images/index/tea12.jpg" alt="狭山茶の商品画像">
+            <img src="./images/index/sayama-tea.jpg" alt="狭山茶の商品画像">
             <dl>
               <dt>狭山茶</dt>
               <dd>
@@ -89,7 +100,7 @@
             <p class="type">HOT</p>
           </li>
           <li id="kakegawacha">
-            <img src="./images/index/img-item03.jpg" alt="掛川茶の商品画像">
+            <img src="./images/index/kakegawa-tea.jpg" alt="掛川茶の商品画像">
             <dl>
               <dt>掛川茶</dt>
               <dd>
@@ -100,7 +111,7 @@
             <p class="type">HOT</p>
           </li>
           <li id="ujicha">
-            <img src="./images/index/img-item04.jpg" alt="宇治茶の商品画像">
+            <img src="./images/index/uji-tea.jpg" alt="宇治茶の商品画像">
             <dl>
               <dt>宇治茶</dt>
               <dd>
@@ -110,19 +121,8 @@
             </dl>
             <p class="type">ICE</p>
           </li>
-          <li id="ryokucha">
-            <img src="./images/index/tea11.jpg" alt="緑茶の商品画像">
-            <dl>
-              <dt>緑茶</dt>
-              <dd>
-                玉露、煎茶、番茶、抹茶、ほうじ茶など種類があります。<br>
-                インフルエンザ予防、ダイエット効果、生活習慣病予防、リラックス効果、免疫細胞を活性化などが期待できる健康に良いお茶です。
-              </dd>
-            </dl>
-            <p class="type">HOT</p>
-          </li>
           <li id="houjicha">
-            <img src="./images/index/tea12.jpg" alt="ほうじ茶の商品画像">
+            <img src="./images/index/houji-tea.png" alt="ほうじ茶の商品画像">
             <dl>
               <dt>ほうじ茶</dt>
               <dd>
@@ -133,7 +133,7 @@
             <p class="type">ICE</p>
           </li>
           <li id="uroncha">
-            <img src="./images/index/img-item03.jpg" alt="烏龍茶の商品画像">
+            <img src="./images/index/uron-tea.png" alt="烏龍茶の商品画像">
             <dl>
               <dt>烏龍茶</dt>
               <dd>
@@ -144,7 +144,7 @@
             <p class="type">ICE</p>
           </li>
           <li id="mugicha">
-            <img src="./images/index/img-item04.jpg" alt="麦茶の商品画像">
+            <img src="./images/index/mugi-tea.png" alt="麦茶の商品画像">
             <dl>
               <dt>麦茶</dt>
               <dd>
@@ -171,7 +171,7 @@
             </dl>
           </li>
           <li id="manju">
-            <img src="./images/index/manju.png" alt="饅頭の商品画像">
+            <img src="./images/index/tomanju.png" alt="都まんじゅうの商品画像">
             <dl>
               <dt>都まんじゅう</dt>
               <dd>
@@ -184,27 +184,30 @@
           <li class="dammy-item"></li>
 
         </ul>
-
-
       </div>
-      <!-- <div class="link-button-area">
-        <a class="link-button" href="./menu.html">MENU</a>
-      </div> -->
     </div>
   </main>
 
   <!-- footer -->
   <footer class="footer">
-    <nav class="menu-list">
+    <nav class="menu-list" data-nav-kind="top">
       <ul>
-        <li><a href="index.html">トップへ戻る</a></li>
+        <li><a href="#top">トップ</a></li>
+        <li><a href="#concept">想い</a></li>
+        <li><a href="#detail">お茶カフェとは</a></li>
+        <li><a href="#menu">メニュー</a></li>
+        <li><a href="#introduce">運営元紹介</a></li>
+        <li><a href="#question">Q&A</a></li>
+        <li><a href="#quiz">クイズ</a></li>
+        <li><a href="#map">アクセス</a></li>
+        <li><a href="#contact">問い合わせ</a></li>
       </ul>
     </nav>
     <a class="footer-logo" href="./index.html">
       <img src="./images/index/cafe-logo2.png" alt="フッターロゴ">
     </a>
     <p class="footer-intro"><span>上野中通商店街振興組合</span><span>×</span><span>茶の君野園</span><span>×</span><span>NPO法人おりがみ</span></p>
-    <p class="footer-time">OPEN 5/18 13:00-17:00</p>
+    <p class="footer-time">OPEN 5/18 13:00-17:00 (L.O. 16:30)</p>
     <p class="copyright"><small>&copy;お茶カフェ</small></p>
   </footer>
 </body>
